@@ -1,0 +1,23 @@
+public class Ejercicio14 : MonoBehaviour
+{
+    public int energia = 10;
+    void Start()
+    {
+        for (int i = 0; i < 20; i++)
+        {
+            energia--;
+
+            Debug.Log("Energía actual: " + energia);
+
+            if (energia <= 0)
+            {
+                Debug.Log("Energía agotada");
+                break;
+            }
+        }
+    }
+    void Update()
+    {
+        
+    }
+}
