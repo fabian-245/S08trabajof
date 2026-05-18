@@ -1,0 +1,27 @@
+public class Ejercicio20 : MonoBehaviour
+{
+    public GameObject WhiteObj;
+    public GameObject BlackObj;
+    void Start()
+    {
+        for (int x = 0; x < 8; x++)
+        {
+            for (int y = 0; y < 8; y++)
+            {
+                GameObject obj;
+                if ((x + y) % 2 == 0)
+                {
+                    obj = Instantiate(WhiteObj);
+                }
+                else
+                {
+                    obj = Instantiate(BlackObj);
+                }
+                obj.transform.position = new Vector3(x, y, 0);
+            }
+        }
+    }
+    void Update()
+    {
+    }
+}
