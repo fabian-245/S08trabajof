@@ -1,0 +1,21 @@
+public class Ejercicio15 : MonoBehaviour
+{
+    string[] enemigos = { "Slime", "Orco", "Boss", "Dragón" };
+    void Start()
+    {
+        foreach (string enemigo in enemigos)
+        {
+            Debug.Log("Enemigo: " + enemigo);
+
+            if (enemigo == "Boss")
+            {
+                Debug.Log("¡Jefe final detectado!");
+                break;
+            }
+        }
+    }
+    void Update()
+    {
+        
+    }
+}
