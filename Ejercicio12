@@ -1,0 +1,21 @@
+public class Ejercicio12 : MonoBehaviour
+{
+    string[] objetos = { "Espada", "Poción", "Llave", "Escudo" };
+    void Start()
+    {
+        foreach (string objeto in objetos)
+        {
+            Debug.Log("Revisando: " + objeto);
+
+            if (objeto == "Llave")
+            {
+                Debug.Log("¡Llave encontrada!");
+                break;
+            }
+        }
+    }
+    void Update()
+    {
+        
+    }
+}
