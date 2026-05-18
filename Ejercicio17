@@ -1,0 +1,19 @@
+public class Ejercicio17 : MonoBehaviour
+{
+    string[] inventario = { "Espada", "Poción", "Escudo", "Arco" };
+    void Start()
+    {
+        MostrarInventario(inventario);
+    }
+    void Update()
+    {
+        
+    }
+    void MostrarInventario(string[] items)
+    {
+        foreach (string item in items)
+        {
+            Debug.Log("Item: " + item);
+        }
+    }
+}
