@@ -1,0 +1,21 @@
+public class Ejercicio11 : MonoBehaviour
+{
+    string[] enemigos = { "Goblin", "Derrotado", "Orco", "Derrotado", "Dragón" };
+
+    void Start()
+    {
+        foreach (string enemigo in enemigos)
+        {
+            if (enemigo == "Derrotado")
+            {
+                continue;
+            }
+
+            Debug.Log("Enemigo encontrado: " + enemigo);
+        }
+    }
+    void Update()
+    {
+        
+    }
+}
