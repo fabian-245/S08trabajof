@@ -1,0 +1,28 @@
+public class Ejercicio19 : MonoBehaviour
+{
+    bool EsRaro(string item)
+    {
+        return item.Contains("Legendaria");
+    }
+    string[] items = { "Madera", "Piedra", "Espada Legendaria", "Hierro" };
+    void Start()
+    {
+        BuscarItemRaro(items);
+    }
+    void Update()
+    { 
+    }
+    void BuscarItemRaro(string[] items)
+    {
+        foreach (string item in items)
+        {
+            if (EsRaro(item))
+            {
+                Debug.Log("Se encontró un item raro: " + item);
+                break;
+            }
+
+            Debug.Log(item + " no es raro");
+        }
+    }
+}
