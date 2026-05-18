@@ -1,0 +1,17 @@
+public class Ejercicio16 : MonoBehaviour
+{
+    void Start()
+    {
+        for (int i = 0; i < 5; i++)
+        {
+            HacerDaño();
+        }
+    }
+    void Update()
+    {  
+    }
+    void HacerDaño()
+    {
+        Debug.Log("El jugador hizo daño");
+    }
+}
