@@ -1,0 +1,26 @@
+public class Ejercicio18 : MonoBehaviour
+{
+    public bool[] enemigos = { true, false, true, false, true };
+    void Start()
+    {
+        RevisarEnemigos(enemigos);
+    }
+    void Update()
+    { 
+    }
+    void RevisarEnemigos(bool[] enemigos)
+    {
+        for (int i = 0; i < enemigos.Length; i++)
+        {
+            if (enemigos[i] == false)
+            {
+                continue;
+            }
+            Debug.Log("Enemigo " + i + " sigue vivo");
+        }
+    }
+    bool EstaVivo(bool estado)
+    {
+        return estado;
+    }
+}
